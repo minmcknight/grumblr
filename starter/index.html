@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Grumblr</title>
+    <link rel='stylesheet' type='text/css' href='css/application.css'>
+  </head>
+  <body>
+    <header><img src="https://camo.githubusercontent.com/613bc7eb2a28483a252a45946af877f7034a919d/687474703a2f2f692e696d6775722e636f6d2f554a38747232412e6a7067"></header>
+    <script type = "text/javascript" src= 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type = "text/javascript"  src= 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+    <script type = "text/javascript" src= 'https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+  <div id="grumble-form" style="display: block;">
+  <div class="grumble-form-div">
+	<input type="text" name="title" placeholder="title">
+	<input type="text" name="content" placeholder="content">
+	<input type="text" name="author" placeholder="author">
+	<input type="text" name="avatar" placeholder="avatar">
+	<button class="new-grumble">GRUMBLE</button>
+  </div>
+    <div id='grumble-list'>
+    <div class='grumble'>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZNh8APXY6Kuvz2IMZRBGbslGumBAuV2W12gQrlhHPmgHoBbBN6D_muas" alt="">
+	<h5>title | author</h5>
+	<p>Sample description</p>
+	<span class='destroy' data-id="">Delete</span>
+  
+	<span class='edit'>Edit</span>
+      </div>
+    </div>
+  <script src='js/models/grumble.js'></script>
+<script src='js/collections/grumblrCollection.js'></script>
+<script src='js/views/grumblrView.js'></script>
+ 
+  </body>
+</html>
